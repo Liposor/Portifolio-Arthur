@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.env.local
+.env.*.local
+
+# Os MP4 originais ficam na raiz. Publique as cópias em public/videos/.
+/*.mp4

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 880" preserveAspectRatio="xMidYMid slice">
+<defs>
+<linearGradient id="bg" x2="1" y2="1" gradientUnits="objectBoundingBox"><stop stop-color="#250c11"/><stop offset=".55" stop-color="#5e0c17"/><stop offset="1" stop-color="#0a0a0d"/></linearGradient>
+<linearGradient id="metal" x1="0" y1="0" x2="1" y2=".8" gradientUnits="objectBoundingBox">
+<stop stop-color="#16090c"/><stop offset=".18" stop-color="#fb2439"/><stop offset=".29" stop-color="#7d061a"/><stop offset=".47" stop-color="#170a0c"/><stop offset=".57" stop-color="#ff3649"/><stop offset=".65" stop-color="#c10d27"/><stop offset=".81" stop-color="#4c0916"/><stop offset="1" stop-color="#0d0a0d"/></linearGradient>
+<pattern id="net" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M60 0H0v60" stroke="#ffa5a7" stroke-opacity=".18" fill="none"/></pattern>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".61" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+<radialGradient id="light"><stop stop-color="#fa152d" stop-opacity=".5"/><stop offset="1" stop-color="#fa152d" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="800" height="880" fill="url(#bg)"/><ellipse cx="390" cy="365" rx="490" ry="440" fill="url(#light)"/><rect width="800" height="880" fill="url(#net)"/>
+<g transform="translate(400 430) rotate(-25) scale(.83) translate(-400 -430)">
+<path d="M36 705 387 151 475 151 138 741Z" fill="#13090d" stroke="#ab1d31" stroke-width="2"/>
+<path d="M118 731 460 127 551 159 219 761Z" fill="url(#metal)" stroke="#ec384a" stroke-width="2"/>
+<path d="m209 761 342-602 34 60-295 548Z" fill="#28090f" stroke="#9d0c21"/>
+<path d="m295 767 302-568 151 14-289 581Z" fill="url(#metal)" stroke="#e4293b" stroke-width="2"/>
+<path d="m458 794 290-581 35 65-245 522Z" fill="#390a13" stroke="#a01428"/>
+<path d="M235 641 497 179M415 734l283-502M156 687 459 152" fill="none" stroke="#ff6672" stroke-opacity=".68" stroke-width="1.4"/>
+</g>
+<rect width="800" height="880" filter="url(#grain)" opacity=".28" style="mix-blend-mode:soft-light"/>
+<path d="M40 106V40h66m588 0h66v66M40 774v66h66m588 0h66v-66" stroke="#fec8cb" opacity=".62" fill="none"/>
+<circle cx="400" cy="440" r="84" stroke="#ffc5c7" stroke-opacity=".5" fill="none"/><path d="M383 440h34m-17-17v34" stroke="#fff0f0" opacity=".56"/></svg>
