@@ -17,7 +17,7 @@ type Profile = {
 
 export const profile: Profile = {
   name: 'Arthur de Freitas',
-  role: 'Video Editor / Visual Creative',
+  role: 'Editor de vídeo',
   contacts: {
     instagram: 'https://www.instagram.com/thuurfreitas/',
     youtube: 'https://www.youtube.com/@japudo27'

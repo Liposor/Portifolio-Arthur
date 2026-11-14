@@ -35,10 +35,10 @@ export function Gallery() {
 
   return (
     <section className="section shell" id="projetos" tabIndex={-1} aria-labelledby="work-title">
-      <div className="eyebrow" data-reveal><span>01</span> <DecodeText text="Portfólio" /></div>
+      <div className="eyebrow" data-reveal><DecodeText text="Portfólio" /></div>
       <div className="section-heading">
         <h2 id="work-title" data-reveal aria-label="Trabalhos."><KineticText lines={["Trabalhos."]} /></h2>
-        <p>Edição de vídeo com foco em ritmo, narrativa e identidade visual.</p>
+        <p>Gameplays, vídeos curtos e o vlog de uma viagem a Vinhedo.</p>
       </div>
       {categories.length > 0 && (
         <div className="filters" aria-label="Filtrar por categoria">

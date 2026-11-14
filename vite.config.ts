@@ -17,11 +17,7 @@ export default defineConfig(({ mode }) => {
         return html.replace('<!-- SHARE -->', [
           `<link rel="canonical" href="${escape(canonical)}">`,
           `<meta property="og:url" content="${escape(canonical)}">`,
-          `<meta property="og:image" content="${escape(new URL('images/share.png', canonical).href)}">`,
-          '<meta property="og:image:width" content="1200">',
-          '<meta property="og:image:height" content="630">',
-          '<meta property="og:image:alt" content="Arthur de Freitas, editor de vídeo">',
-          '<meta name="twitter:card" content="summary_large_image">'
+          '<meta name="twitter:card" content="summary">'
         ].join('\n'))
       }
     }]

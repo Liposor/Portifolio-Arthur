@@ -153,8 +153,7 @@ function App() {
               <DecodeText text={profile.role} />
             </div>
             <h1 id="hero-title" aria-label={profile.name}><KineticText lines={['ARTHUR', 'DE FREITAS.']} /></h1>
-            <p className="tagline">Cortes que prendem.<br />Imagens que ficam.</p>
-            <p className="hero-description">Transformo momentos de gameplay em vídeos com ritmo, personalidade e identidade visual.</p>
+            <p className="hero-description">Edito gameplays, vídeos curtos e vlogs.</p>
             <div className="actions">
               <Action href="#projetos" primary>Ver meus trabalhos</Action>
               <Action href="#contato" outbound>Vamos conversar</Action>
@@ -167,7 +166,6 @@ function App() {
             <div className="hero-portrait-ambient" aria-hidden="true" />
             <img src={asset('images/arthur-retrato.jpg')} alt="Arthur de Freitas de perfil ao pôr do sol"
               fetchPriority="high" width="160" height="160" />
-            <figcaption className="mono"><DecodeText text={profile.name} /></figcaption>
           </figure>}
           <div className="hero-bottom">
             <a className="mono scroll-link" href="#projetos"><ArrowDown className="scroll-arrow" size={17} aria-hidden="true" /> <DecodeText text="Role para explorar" /></a>
@@ -177,27 +175,27 @@ function App() {
         <Gallery />
         <section className="section shell about" id="sobre" tabIndex={-1} aria-labelledby="about-title">
           <div>
-            <div className="eyebrow" data-reveal><span>02</span> <DecodeText text="Sobre Arthur" /></div>
-            <h2 id="about-title" data-reveal aria-label="Por trás dos frames."><KineticText lines={["Por trás","dos frames."]} /></h2>
+            <div className="eyebrow" data-reveal><DecodeText text="Sobre" /></div>
+            <h2 id="about-title" data-reveal aria-label="Sobre mim"><KineticText lines={["Sobre mim"]} /></h2>
             {profile.photo && <img className="portrait" src={asset(profile.photo)} loading="lazy" alt={profile.name} width="540" height="680" />}
           </div>
           <div className="about-copy" data-reveal>
             <h3>Oi, eu sou o Arthur.</h3>
-            <p>Sou estudante do Ensino Médio no Brasil e encontrei na edição de vídeo uma forma de explorar minha criatividade. Comecei com gameplays, experimentando cortes, ritmo e maneiras de contar o que acontece numa partida.</p>
-            <p>Também gosto de design visual, arte e de trocar ideias com outras pessoas. Estou construindo meu portfólio e quero aprender com novos desafios e criar em conjunto.</p>
+            <p>Estou no ensino médio e comecei a editar vídeos de gameplay. Gosto de escolher os trechos que contam melhor o que aconteceu na partida.</p>
+            <p>Também curto design e quero editar mais vídeos com outras pessoas. O vlog de Vinhedo foi uma chance de editar algo fora dos jogos.</p>
             <Availability />
           </div>
         </section>
         <section className="section shell" id="criacao" tabIndex={-1} aria-labelledby="services-title">
-          <div className="eyebrow" data-reveal><span>03</span> <DecodeText text="Criação" /></div>
+          <div className="eyebrow" data-reveal><DecodeText text="Criação" /></div>
           <h2 id="services-title" data-reveal aria-label="O que eu posso criar."><KineticText lines={["O que eu posso criar."]} /></h2>
           <ServiceCards />
         </section>
         <section className="contact" id="contato" tabIndex={-1} aria-labelledby="contact-title">
           <div className="shell section">
-            <div className="eyebrow" data-reveal><span>04</span> <DecodeText text="Contato" /></div>
+            <div className="eyebrow" data-reveal><DecodeText text="Contato" /></div>
             <h2 id="contact-title" data-reveal aria-label="Tem uma ideia? Vamos criar algo."><KineticText lines={["Tem uma ideia?","Vamos criar algo."]} /></h2>
-            <p>Estou aberto a novos projetos, colaborações e oportunidades de edição.</p>
+            <p>Quer conversar sobre uma edição? Me chama no Instagram.</p>
             {contactLinks.length === 0 && <p className="contact-note">Meus canais de contato serão adicionados em breve.</p>}
             <div className="actions">
               {contactLinks.filter(({ kind }) => kind !== 'instagram' && kind !== 'youtube').map(({ href, label }, index) => (
